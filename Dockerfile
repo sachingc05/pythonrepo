@@ -2,11 +2,11 @@
 FROM python:3.9-alpine
 
 # Install python and pip
-RUN apk add --update py2-pip
+RUN apk add --update python3 py3-pip
 
 # install Python modules needed by the Python app
 COPY requirements.txt /usr/src/app/
-RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
+RUN pip3 install --no-cache-dir -r /usr/src/app/requirements.txt
 
 # copy files required for the app to run
 COPY app.py /usr/src/app/
