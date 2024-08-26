@@ -94,6 +94,7 @@ pipeline {
   }
 }
 
+
 Step # 4 - Click on Build - Build the pipeline
 Once you create the pipeline and changes values per your Docker user id and credentials ID, click on 
 
